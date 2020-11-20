@@ -40,7 +40,6 @@ class ServiceController extends Controller
 
     public function registroCliente($name, $dni, $email, $phone)
     {
-        dd('here');
         $array = ['name' => $name, 'dni' => $dni, 'email' => $email, 'phone' => $phone];
 
         $validator = Validator::make($array, [
