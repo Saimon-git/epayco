@@ -1,7 +1,9 @@
 # EPayco
 
-Backend con soap con laravel
+Backend soap con laravel
+
 client con vuejs y tailwind
+
 api con laravel y graphql
 
 ### Descripción 📋
