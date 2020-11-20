@@ -17,9 +17,9 @@ class SoapController extends Controller
 
         $builder = WSDLBuilder::instance()
             ->setName('payco')
-            ->setTargetNamespace('http://localhost/epayco/soap/public/api/server')
+            ->setTargetNamespace('http://soap.local/api/server')
             ->setNs('http://foo.bar/documentliteralservice/types')
-            ->setLocation('http://localhost/epayco/soap/public/api/server')
+            ->setLocation('http://soap.local/api/server')
             ->setPortName('payco')
             ->setStyle(SoapBinding::DOCUMENT)
             ->setUse(SoapBinding::LITERAL)

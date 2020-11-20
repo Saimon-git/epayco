@@ -1,0 +1,30 @@
+#import client.graphql
+#import wallet.graphql
+#import token.graphql
+#import payment.graphql
+
+scalar Mixed @scalar(class: "MLL\\GraphQLScalars\\Mixed")
+scalar Upload @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Upload")
+scalar JSON @scalar(class: "MLL\\GraphQLScalars\\JSON")
+
+enum Operator {
+    EQ @enum(value: "=")
+    NEQ @enum(value: "!=")
+    GT @enum(value: ">")
+    GTE @enum(value: ">=")
+    LT @enum(value: "<")
+    LTE @enum(value: "<=")
+    LIKE @enum(value: "LIKE")
+    NOT_LIKE @enum(value: "NOT_LIKE")
+}
+
+type Query {
+    checkBalance(input:CheckBalanceInput! @spread):Wallet
+}
+
+type Mutation {
+    createClient(input: ClientInputCreate! @spread): Client
+    rechargeWallet(input: RechargeWalletInputCreate! @spread): Wallet
+    generateToken(input: TokenInputCreate! @spread): Token
+    confirmPayment(input: PaymentInputCreate! @spread): Payment
+}

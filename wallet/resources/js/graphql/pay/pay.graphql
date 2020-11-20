@@ -1,0 +1,5 @@
+mutation confirmPayment($input: PaymentInputCreate!){
+    confirmPayment(input: $input) {
+        id
+    }
+}

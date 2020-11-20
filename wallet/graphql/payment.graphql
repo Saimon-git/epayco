@@ -1,0 +1,11 @@
+input PaymentInputCreate {
+    id: String @rules(apply: ["required"])
+    token: String @rules(apply: ["required"])
+}
+
+
+type Payment {
+    id: ID!
+    token: String
+}
+

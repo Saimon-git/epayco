@@ -1,0 +1,12 @@
+input TokenInputCreate {
+    dni: String @rules(apply: ["required"])
+    phone: String @rules(apply: ["required"])
+}
+
+
+type Token {
+    id: ID!
+    dni: String
+    phone: String
+}
+

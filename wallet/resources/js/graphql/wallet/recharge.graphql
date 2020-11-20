@@ -1,0 +1,5 @@
+mutation rechargeWallet($input: RechargeWalletInputCreate!){
+    rechargeWallet(input: $input) {
+        id
+    }
+}

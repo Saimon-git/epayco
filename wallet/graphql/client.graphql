@@ -1,0 +1,16 @@
+input ClientInputCreate {
+    name: String @rules(apply: ["required"])
+    phone: String @rules(apply: ["required"])
+    email: String @rules(apply: ["required", "email"])
+    identification: String @rules(apply: ["required"])
+}
+
+
+type Client {
+    id: ID!
+    name: String
+    phone: String
+    email: String
+    identification: String
+}
+

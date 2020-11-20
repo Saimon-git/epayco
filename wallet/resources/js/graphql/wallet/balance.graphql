@@ -1,0 +1,5 @@
+query checkBalance($input: CheckBalanceInput!) {
+    checkBalance(input:$input) {
+        balance
+    }
+}

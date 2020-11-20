@@ -1,0 +1,5 @@
+mutation generateToken($input: TokenInputCreate!){
+    generateToken(input: $input) {
+        token
+    }
+}

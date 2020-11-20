@@ -1,0 +1,16 @@
+input CheckBalanceInput {
+    dni: String @rules(apply: ["required"])
+    phone: String @rules(apply: ["required"])
+}
+
+input RechargeWalletInputCreate {
+    dni: String @rules(apply: ["required"])
+    phone: String @rules(apply: ["required"])
+    quantity: String @rules(apply: ["required"])
+}
+
+
+type Wallet {
+    ammount: String
+}
+
